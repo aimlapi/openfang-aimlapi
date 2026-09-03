@@ -573,6 +573,15 @@ pub fn read_codex_credential() -> Option<String> {
 fn builtin_providers() -> Vec<ProviderInfo> {
     vec![
         ProviderInfo {
+            id: "aimlapi".into(),
+            display_name: "aimlapi.com".into(),
+            api_key_env: "AIMLAPI_API_KEY".into(),
+            base_url: AIMLAPI_BASE_URL.into(),
+            key_required: true,
+            auth_status: AuthStatus::Missing,
+            model_count: 0,
+        },
+        ProviderInfo {
             id: "anthropic".into(),
             display_name: "Anthropic".into(),
             api_key_env: "ANTHROPIC_API_KEY".into(),
@@ -631,15 +640,6 @@ fn builtin_providers() -> Vec<ProviderInfo> {
             display_name: "Requesty".into(),
             api_key_env: "REQUESTY_API_KEY".into(),
             base_url: REQUESTY_BASE_URL.into(),
-            key_required: true,
-            auth_status: AuthStatus::Missing,
-            model_count: 0,
-        },
-        ProviderInfo {
-            id: "aimlapi".into(),
-            display_name: "aimlapi.com".into(),
-            api_key_env: "AIMLAPI_API_KEY".into(),
-            base_url: AIMLAPI_BASE_URL.into(),
             key_required: true,
             auth_status: AuthStatus::Missing,
             model_count: 0,

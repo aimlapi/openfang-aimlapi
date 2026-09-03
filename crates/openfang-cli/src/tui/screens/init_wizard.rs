@@ -29,6 +29,14 @@ struct ProviderInfo {
 
 const PROVIDERS: &[ProviderInfo] = &[
     ProviderInfo {
+        name: "aimlapi",
+        display: "aimlapi.com",
+        env_var: "AIMLAPI_API_KEY",
+        default_model: "aimlapi/google/gemini-2.5-flash",
+        needs_key: true,
+        hint: "",
+    },
+    ProviderInfo {
         name: "groq",
         display: "Groq",
         env_var: "GROQ_API_KEY",
@@ -73,14 +81,6 @@ const PROVIDERS: &[ProviderInfo] = &[
         display: "OpenRouter",
         env_var: "OPENROUTER_API_KEY",
         default_model: "openrouter/google/gemini-2.5-flash",
-        needs_key: true,
-        hint: "",
-    },
-    ProviderInfo {
-        name: "aimlapi",
-        display: "aimlapi.com",
-        env_var: "AIMLAPI_API_KEY",
-        default_model: "aimlapi/google/gemini-2.5-flash",
         needs_key: true,
         hint: "",
     },

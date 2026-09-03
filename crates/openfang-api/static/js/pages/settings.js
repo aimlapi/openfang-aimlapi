@@ -362,7 +362,7 @@ function settingsPage() {
       switch (cat) {
         case 'frontier':   return 'Frontier (Anthropic, OpenAI, Google, xAI, Bedrock)';
         case 'oss':        return 'Open-Weight Hosts (Groq, Together, Fireworks, DeepSeek, etc.)';
-        case 'aggregator': return 'Aggregators & Gateways (OpenRouter, GitHub Copilot)';
+        case 'aggregator': return 'Aggregators & Gateways (aimlapi.com, OpenRouter, GitHub Copilot)';
         case 'regional':   return 'Regional / China (Qwen, Zhipu, Moonshot, MiniMax)';
         case 'local':      return 'Local / Self-Hosted (Ollama, vLLM, LM Studio, Lemonade)';
         default:           return 'Other Providers';

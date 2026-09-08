@@ -349,7 +349,7 @@ function settingsPage() {
       var id = (p.id || '').toLowerCase();
       var FRONTIER = ['anthropic','openai','gemini','google','xai','bedrock','azure','vertex'];
       var OSS = ['groq','together','fireworks','cerebras','sambanova','deepseek','mistral','perplexity','cohere','ai21','huggingface','replicate','nvidia','venice','novita','chutes'];
-      var AGG = ['openrouter','litellm','github-copilot','claude-code'];
+      var AGG = ['aimlapi','openrouter','litellm','github-copilot','claude-code'];
       var REGIONAL = ['qwen','minimax','zhipu','zai','moonshot','qianfan','volcengine','kimi'];
       if (FRONTIER.indexOf(id) !== -1) return 'frontier';
       if (REGIONAL.indexOf(id) !== -1) return 'regional';
@@ -362,7 +362,7 @@ function settingsPage() {
       switch (cat) {
         case 'frontier':   return 'Frontier (Anthropic, OpenAI, Google, xAI, Bedrock)';
         case 'oss':        return 'Open-Weight Hosts (Groq, Together, Fireworks, DeepSeek, etc.)';
-        case 'aggregator': return 'Aggregators & Gateways (OpenRouter, GitHub Copilot)';
+        case 'aggregator': return 'Aggregators & Gateways (aimlapi.com, OpenRouter, GitHub Copilot)';
         case 'regional':   return 'Regional / China (Qwen, Zhipu, Moonshot, MiniMax)';
         case 'local':      return 'Local / Self-Hosted (Ollama, vLLM, LM Studio, Lemonade)';
         default:           return 'Other Providers';

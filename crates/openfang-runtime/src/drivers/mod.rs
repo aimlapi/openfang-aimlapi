@@ -317,7 +317,7 @@ fn provider_defaults(provider: &str) -> Option<ProviderDefaults> {
 /// The gateway accepts `^part_[A-Za-z0-9]{1,64}$` and silently ignores anything
 /// else — a typo costs attribution without producing any runtime error, which is
 /// why the shape is asserted in a unit test rather than only reviewed by eye.
-pub const AIMLAPI_PARTNER_ID: &str = "part_openfang";
+pub const AIMLAPI_PARTNER_ID: &str = "part_Z6HbToJ3l2ht1dFSzHC98vk6";
 
 /// The one host that owns the AI/ML API attribution headers.
 const AIMLAPI_HOST: &str = "api.aimlapi.com";
